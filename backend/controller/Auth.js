@@ -115,11 +115,10 @@ exports.signup = async (req, res) => {
     }
     try {
       const apiKey = process.env.ZEROBOUNCE_API_KEY;
-      console.log(apiKey);
       const apiUrl = `https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${Email}`;
 
       const response = await axios.get(apiUrl);
-      
+      console.log(response);
       if (response.data.status === "valid") {
         let hasedpassward;
         try {

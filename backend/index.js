@@ -41,4 +41,5 @@ app.use(route); //mounting our route to our app
 app.listen(PORT, () => {
   
   console.log(`server started at ${PORT}`);
-}); // starting our development server of backend
+}); 
+// starting our development server of backend

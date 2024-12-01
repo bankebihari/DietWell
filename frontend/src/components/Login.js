@@ -27,7 +27,7 @@ const Login = () => {
     var addUser = { Email, Passward }; //creating an object email and passward which we have to send on backend for maching with data is stored in backend;
     const token = localStorage.getItem('token')
     // this is used to make call for backend server
-    const response = await fetch("https://deployment-1-99ih.onrender.com/login", {
+    const response = await fetch("http://localhost:2000/login", {
       method: "POST", //post request because we are sending data to backend
       headers: {
         "Content-Type": "application/json",
