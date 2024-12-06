@@ -22,7 +22,7 @@ const Forrgottenpassward = () => {
     var data = { Email };
     const token = localStorage.getItem('token')
     console.log(data);
-    const response = await fetch("https://deployment-1-99ih.onrender.com/forgottenpassward", {
+    const response = await fetch("http://localhost:2000/forgottenpassward", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
