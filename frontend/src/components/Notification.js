@@ -6,7 +6,7 @@ const Notificationbar = () => {
     const [menu, setMenu] = useState([]);
     const token = localStorage.getItem('token')
     const getNotification = async () => {
-        const response = await fetch("https://deployment-1-99ih.onrender.com/notification", {
+        const response = await fetch("http://localhost:2000/notification", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

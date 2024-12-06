@@ -13,7 +13,7 @@ const SearchUserByEmail = (props) => {
     var data = { email };
     console.log("Finding user:", data);
     // Add the logic to actually fetch the user data based on the email
-    const response = await fetch(`https://deployment-1-99ih.onrender.com/${route}`, {
+    const response = await fetch(`http://localhost:2000/${route}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

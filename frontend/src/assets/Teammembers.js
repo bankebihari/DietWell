@@ -1,18 +1,17 @@
 import sahil from "./loginImage.jpeg";
-import sahilImage from "./sahilphoto.jpeg";
-import mintuImage from "./mintuphoto.jpeg";
-import kanishkaImage from "./kanishkaphoto.jpg";
-import ayanImage from "./ayanphoto.jpg";
-import Shashi from "./Shashi.png";
+import bankeImage from "./banke.jpg";
+import Nirbhay from "./Nirbhay.jpeg";
+ //import ashuImage from "./ashuphoto.jpg";
+// import asutosh from "./ashutosh.png";
 const teamMembers = [
-  { name: "Deepanshu Singh", role: "Developer", imageUrl: sahilImage },
+  { name: "Banke Bihari", role: "Developer", imageUrl: bankeImage },
   {
-    name: "Mintu Chaudhary",
+    name: "Nirbhay Singh",
     role: "CEO, Marketing Head",
-    imageUrl: mintuImage,
+     imageUrl: Nirbhay,
   },
-  { name: "Shashi Verma", role: "Developer", imageUrl: Shashi },
-  { name: "Ayan Firdosh", role: "Project Manager", imageUrl: ayanImage },
+  // { name: "ashutosh", role: "Developer", imageUrl: asutosh },
+  // { name: "Ashutosh", role: "Project Manager", imageUrl: ashuImage },
 ];
 export default teamMembers;
 // this is for our team detail and is we have to add a member to our team we can add data here and team is automatically added to our about page page no need to hardcode there

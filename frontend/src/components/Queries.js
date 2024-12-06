@@ -12,7 +12,7 @@ const Queries = () => {
 
   const FetchQueries = async (option) => {
     const token = localStorage.getItem('token')
-    const response = await fetch(`https://deployment-1-99ih.onrender.com/selected/${option}`, {
+    const response = await fetch(`http://localhost:2000/selected/${option}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

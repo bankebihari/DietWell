@@ -45,7 +45,7 @@ const FetchApplyDoctor = () => {
     try {
       const data = { email };
       const token = localStorage.getItem("token");
-      const response = await fetch("https://deployment-1-99ih.onrender.com/approvedoctor", {
+      const response = await fetch("http://localhost:2000/approvedoctor", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

@@ -24,7 +24,7 @@ const Navbar = () => {
   // logout function
   const logout = async () => {
     const token = localStorage.getItem('token')
-    const response = await fetch("https://deployment-1-99ih.onrender.com/logout", {
+    const response = await fetch("http://localhost:2000/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -22,7 +22,7 @@ const HairandSkincare = () => {
   const hairandskindata = async () => {
     const token = localStorage.getItem('token')
     const response = await fetch(
-      "https://deployment-1-99ih.onrender.com/services/haireandskincare",
+      "http://localhost:2000/services/haireandskincare",
       {
         method: "GET",
         headers: {
