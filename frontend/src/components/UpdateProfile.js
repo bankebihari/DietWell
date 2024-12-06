@@ -89,7 +89,7 @@ const UpdateProfile = () => {
     // You can handle form submission here
     var addUser = { profile };
     const response = await fetch(
-      "https://deployment-1-99ih.onrender.com/profile/updateprofile",
+      "http://localhost:2000/profile/updateprofile",
       {
         method: "POST",
         headers: {
