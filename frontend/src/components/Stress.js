@@ -19,7 +19,7 @@ const Stress = () => {
 
   const stress = async () => {
     const token = localStorage.getItem('token')
-    const response = await fetch("http://localhost:2000/services/stress", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/services/stress", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

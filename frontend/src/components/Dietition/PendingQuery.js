@@ -14,7 +14,7 @@ const PendingQuery = ({ menu, fetchQuestion }) => {
     const data = { reply, id };
     const token = localStorage.getItem('token')
     const response = await fetch(
-      `http://localhost:2000/user/dietition/submit-dietiton-response`,
+      `https://dietwell-1-hlvk.onrender.com/user/dietition/submit-dietiton-response`,
       {
         method: "POST",
         headers: {

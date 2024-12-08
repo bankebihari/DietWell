@@ -8,7 +8,7 @@ const DietitionNavbar = ()=>{
       const token = localStorage.getItem('token')
       e.preventDefault();
       // const token = sessionStorage.getItem('token')
-      const response = await fetch("http://localhost:2000/logout", {
+      const response = await fetch("https://dietwell-1-hlvk.onrender.com/logout", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const FetchApplyDoctor = () => {
   const fetchApplications = async () => {
     try {
       const token = sessionStorage.getItem("token");
-      const response = await fetch(`http://localhost:2000/data/${pending}`, {
+      const response = await fetch(`https://dietwell-1-hlvk.onrender.com/data/${pending}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const FetchApplyDoctor = () => {
     try {
       const data = { email };
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:2000/approvedoctor", {
+      const response = await fetch("https://dietwell-1-hlvk.onrender.com/approvedoctor", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

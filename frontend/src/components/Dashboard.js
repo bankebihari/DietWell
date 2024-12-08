@@ -11,7 +11,7 @@ const Dashboard = () => {
   const fetchUsers = async (e) => {
     // const data = { islogin };
     const token = localStorage.getItem('token')
-    const response = await fetch("http://localhost:2000/dashboard", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/dashboard", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Dashboard = () => {
       const categoryDetails = async () => {
         const token = localStorage.getItem('token')
         const response = await fetch(
-          `http://localhost:2000/admin/${category}`,
+          `https://dietwell-1-hlvk.onrender.com/admin/${category}`,
           {
             method: "POST",
             headers: {

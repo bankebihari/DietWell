@@ -12,7 +12,7 @@ const Queries = () => {
 
   const FetchQueries = async (option) => {
     const token = localStorage.getItem('token')
-    const response = await fetch(`http://localhost:2000/selected/${option}`, {
+    const response = await fetch(`https://dietwell-1-hlvk.onrender.com/selected/${option}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

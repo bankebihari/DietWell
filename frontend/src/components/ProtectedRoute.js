@@ -7,7 +7,7 @@ const ProtectedRoute = ({children})=>{
     const protectedRoute = async()=>{
       const token = localStorage.getItem('token')
         const response = await fetch(
-            "http://localhost:2000/protected",
+            "https://dietwell-1-hlvk.onrender.com/protected",
             {
               method: "GET",
               headers: {

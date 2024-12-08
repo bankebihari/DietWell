@@ -11,7 +11,7 @@ const Users = () => {
   const fetchUsers = async (e) => {
     const token = localStorage.getItem('token')
     // const data = { islogin };
-    const response = await fetch("http://localhost:2000/users", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/users", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

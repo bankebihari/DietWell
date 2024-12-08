@@ -18,7 +18,7 @@ const QuestionMenu = () => {
   const fetchQuestion = async () => {
     const token = localStorage.getItem('token')
     const response = await fetch(
-      `http://localhost:2000/user/dietition/fetchUserQuestions/${status}`,
+      `https://dietwell-1-hlvk.onrender.com/user/dietition/fetchUserQuestions/${status}`,
       {
         method: "Get",
         headers: {

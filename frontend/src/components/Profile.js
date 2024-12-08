@@ -23,7 +23,7 @@ const Profile = () => {
   });
   const firstRender = async () => {
     const token = localStorage.getItem('token')
-    const response = await fetch("http://localhost:2000/profile", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/profile", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

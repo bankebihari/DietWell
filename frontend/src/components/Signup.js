@@ -53,7 +53,7 @@ const Signup = () => {
     console.log(addUser);
     // eslint-disable-next-line no-unused-expressions
     // api call same as login
-    const response = await fetch("http://localhost:2000/signup", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -21,7 +21,7 @@ const WeightGain = () => {
   };
   const weightGain = async () => {
     const token = localStorage.getItem('token')
-    const response = await fetch("http://localhost:2000/services/weightgain", {
+    const response = await fetch("https://dietwell-1-hlvk.onrender.com/services/weightgain", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
