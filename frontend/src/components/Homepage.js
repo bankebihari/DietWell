@@ -8,6 +8,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Services from "./Services";
 import ProtectedRoute from "./ProtectedRoute";
+import quotesArray from '../assets/quotes.json';
 //  impoorting all the required library
 const Home = () => {
   const user = useContext(UserContext);
@@ -17,25 +18,12 @@ const Home = () => {
   // fetching data from context api
   const [quotes, setQuotes] = useState("");
   //   fuction for geerating random quotes
-  const getRandomQuotes = async () => {
-    // try catch block is for cathing the erros
-    try {
-      // making a api call
-      const response = await fetch("https://type.fit/api/quotes");
-      // converting the response to json
-      const result = await response.json();
-      // console.log(result);
-      // creating a randon number
-      const randomNum = Math.floor(Math.random() * 16) + 1;
-      // console.log(randomNum)
-      // console.log(result[randomNum].text)
-      // destructureing the json
-      setQuotes(result[randomNum].text);
-      // settinf the quotes
-      console.log(quotes);
-    } catch (error) {
-      setQuotes("Network error");
-    }
+  const getRandomQuotes = () => {
+    // Creating a random index from the quotes array
+    const randomIndex = Math.floor(Math.random() * quotesArray.length);
+    // Setting a random quote
+    setQuotes(quotesArray[randomIndex]);
+    console.log(quotesArray[randomIndex]);
   };
   // const [currentIndex, setCurrentIndex] = useState(0);
  
