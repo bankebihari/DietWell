@@ -37,7 +37,7 @@ const ApproveDoctor = async (req, res) => {
         host: process.env.MAIL_HOST,
         // auth for providing out email id and app passward
         auth: {
-          user: process.env.MAIL_USER,
+          user: process.env.Email,
           pass: process.env.MAIL_PASS,
         },
     });

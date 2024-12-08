@@ -11,7 +11,7 @@ const FetchApplyDoctor = () => {
   const fetchApplications = async () => {
     try {
       const token = sessionStorage.getItem("token");
-      const response = await fetch(`http://localhost:2000/{pending}`, {
+      const response = await fetch(`http://localhost:2000/data/${pending}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

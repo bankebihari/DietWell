@@ -11,7 +11,7 @@ const Dietition = () => {
   const fetchUsers = async (e) => {
     // const data = { islogin };
     const token = localStorage.getItem('token')
-    const response = await fetch("http://localhost:2000", {
+    const response = await fetch("http://localhost:2000/dietition", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

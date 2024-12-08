@@ -21,7 +21,7 @@ const Contact = () => {
     console.log(addUser);
 
     // api call where we have to send data
-    const response = await fetch("http://localhost:2000", {
+    const response = await fetch("http://localhost:2000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

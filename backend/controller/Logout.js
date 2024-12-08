@@ -1,10 +1,10 @@
 const Logout = async(req,res)=>{
     try{
       //destroying the cookies
-        res.clearCookie('token',{path:'/'})
-        console.log("hiii")
+        //res.clearCookie('token',{path:'/'})
+        console.log("banke")
         //success message
-        res.status(200).json({
+        return res.status(200).json({
             success:true,
             message:"logout success"
         }) ;

@@ -1,6 +1,6 @@
 const user = require("../models/schema");
 const nodemailer = require("nodemailer");
-require('dotenv')
+require('dotenv').config()
 const Forgotpassward = async(req,res)=>{
     try{
         const {Email} = req.body;
@@ -28,12 +28,16 @@ const Forgotpassward = async(req,res)=>{
         const otp = otpGenerator.generate(6, { upperCaseAlphabets: false, lowerCaseAlphabets:false, specialChars: false });
         // console.log(otp);
         // transporter for send an email
+        console.log("mail"+process.env.Email)
         const  transporter = nodemailer.createTransport({
           //host which email service we are using
             host: process.env.MAIL_HOST,
+            host: process.env.MAIL_HOST,
+            port: 587, // Add this
+            secure: false,
             // auth for providing out email id and app passward
             auth: {
-              user: process.env.MAIL_USER,
+              user: process.env.Email,
               pass: process.env.MAIL_PASS,
             },
         });

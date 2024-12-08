@@ -12,7 +12,7 @@ const Dashboard = async(req,res)=>{
         data.AllUsers =await user.find({}).count();
         data.Dietition = await user.find({Role:"Dietiton"}).count();
         data.User = await user.find({Role:"user"}).count();
-        const underWeightQuery = { BMR: { $lt: 1400 }};
+        const underWeightQuery = { BMR: { $lt: 1400 }}; //lt less than , gt = greater than  amd also gte
         data.underWeight = await user.find(underWeightQuery).count();
         const fitquery = { BMR: { $gte: 1400, $lte: 1700 } };
         data.fit = await user.find(fitquery).count();
