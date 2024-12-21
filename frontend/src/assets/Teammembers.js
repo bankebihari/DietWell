@@ -3,7 +3,7 @@ import bankeImage from "./banke.png";
 import Nirbhay from "./Nirbhay.jpeg";
 import ashutosh from "./Ashutosh.jpeg";
 import adarsh from "./Adarsh.jpeg";
-import Shahil from "./sahil.jpeg";
+import Shail from "./sahil.jpeg";
 import aryan from "./aryan.jpeg";
 import harsh from "./harsh.jpeg";
 const teamMembers = [
