@@ -7,7 +7,7 @@ import Shail from "./sahil.jpeg";
 import aryan from "./aryan.jpeg";
 import harsh from "./harsh.jpeg";
 const teamMembers = [
-  { name: "deepanshu Singh", role: "Developer", imageUrl: sahil},
+  { name: "Deepanshu Singh", role: "Developer", imageUrl: sahil},
   {
     name: "Ayan firdosh",
     role: "Developer",
